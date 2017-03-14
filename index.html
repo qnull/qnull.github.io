@@ -30,11 +30,11 @@
     var arr = ["eiWrR-nrqDU"];
     var randarr = arr[Math.floor(Math.random()*(arr.length))];
     var comp = "{videoURL:'"+randarr+"',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1}";
-    console.log(comp);
  </script>   
 <section class="hero ha-waypoint parallax-section parallax-background" data-animate-up="ha-header-hide" data-animate-down="ha-header-hide">	
-<a id="bgndVideo" class="player" data-property=""></a> 
-
+<script>
+    var str = "<a id='bgndVideo' class='player' data-property='"+comp+"'></a>";
+ </script>
     <div class="parallax-overlay parallax-overlay-1"></div> 
 <div class="grid-container">   		
 <div class="hero-holder grid-70 mobile-grid-100 tablet-grid-100">
