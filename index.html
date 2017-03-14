@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -26,10 +26,17 @@
 
 </head>
 <body id="mainsite">
-
+<script>
+    var arr = ["2","1","13","23"];
+    var randarr = arr[Math.floor(Math.random()*(arr.length))];
+    var comp = "{videoURL:'"+randarr+"',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1}";
+    bgndvid = document.getElementById('bgndVideo');
+    bgndvid.data-property = comp;
+ </script>   
 <section class="hero ha-waypoint parallax-section parallax-background" data-animate-up="ha-header-hide" data-animate-down="ha-header-hide">	
-<a id="bgndVideo" class="player" data-property="{videoURL:'6U79bEpS3cw',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1}"></a> 
-<div class="parallax-overlay parallax-overlay-1"></div> 
+<a id="bgndVideo" class="player" data-property=""></a> 
+
+    <div class="parallax-overlay parallax-overlay-1"></div> 
 <div class="grid-container">   		
 <div class="hero-holder grid-70 mobile-grid-100 tablet-grid-100">
 <div class="hero-inner">
