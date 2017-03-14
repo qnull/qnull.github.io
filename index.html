@@ -30,11 +30,10 @@
     var arr = ["eiWrR-nrqDU"];
     var randarr = arr[Math.floor(Math.random()*(arr.length))];
     var comp = "{videoURL:'"+randarr+"',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1}";
+    element.setAttribute('data-property', comp);
  </script>   
 <section class="hero ha-waypoint parallax-section parallax-background" data-animate-up="ha-header-hide" data-animate-down="ha-header-hide">	
-<script>
-    document.write("<a id='bgndVideo' class='player' data-property='"+comp+"'></a>");
- </script>
+<a id="bgndVideo" class="player" data-property=""></a>
     <div class="parallax-overlay parallax-overlay-1"></div> 
 <div class="grid-container">   		
 <div class="hero-holder grid-70 mobile-grid-100 tablet-grid-100">
